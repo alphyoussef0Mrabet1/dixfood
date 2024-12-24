@@ -1,0 +1,592 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Frijole&family=Hanalei+Fill&family=Oi&family=Rubik+Distressed&family=Special+Elite&display=swap');
+
+
+*{
+  font-family: "Rubik Distressed", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  margin: 0;
+
+  
+}
+
+body{
+  background-color: #1a1919;
+}
+
+header{
+  top: 0;
+  left: 0;
+  display: block;
+  padding: 40px;
+  background-color: transparent ;
+  filter: drop-shadow(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+
+
+
+
+ .section h1{
+  font-family: "Oi", serif;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.section hr{
+  width: 200px;
+  margin:  auto; /* Centers the item horizontally */
+  text-align: center;
+
+}
+.logo {
+  font-size: 2rem;
+  color: #fdf7f7 ;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.5s ease;
+  
+}
+.logo span{
+  color: #f3a20b;
+}
+.logo:hover{
+  transform: scale(1.1);
+  color: #161616;
+}
+
+nav a{
+
+  font-size: 1.3em;
+  color: #fdf7f7;
+  margin-left: 4rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active{
+  color: #fdf7f7;
+  border-bottom: 3px solid #f3a20b;
+}
+
+.menu-btn{
+    display: none;
+}
+
+
+.Untitled{
+  width: 100%;
+}
+
+
+.cart {
+  padding: 20px;
+}
+
+.cart h2 {
+  margin-top: 0;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+}
+
+.cart-item button {
+  background-color: #dc3545;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.cart-item button:hover {
+  background-color: #c82333;
+}
+
+
+
+
+.carts{
+  padding-top: 40px;
+  padding-left: 20px;
+    
+}
+
+/* From Uiverse.io by andrew-demchenk0 */ 
+/* before adding the img to the div with the 
+"card-img" class, remove css styles 
+.card-img .img::before and .card-img .img::after,
+then set the desired styles for .card-img. */
+.card {
+  font-family: "Alexandria", sans-serif;
+  display: flex;
+  justify-content: space-evenly;
+  --font-color: #e4e4e4f8;
+  --font-color-sub: #e4e4e4f8;
+  --bg-color: #e4e4e4f8;
+  --main-color: #323232;
+  --main-focus: #2d8cf0;
+  background-color: #696969;
+  width: 100%;
+  height: 390px;
+  border: 2px solid var(--main-color);
+  border-radius: 25px;
+  padding: 50px;
+  margin: 40px;
+  display: inline-block;
+  align-self: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* Add gradient box shadow */
+  box-shadow: 
+    0px 0px 0px 0px rgba(255, 255, 255, 0.281), /* Subtle main shadow */
+    2px 1px 111px 0px rgba(255, 255, 255, 0.4), /* Gradient effect */
+    inset 2px 3px 0px 0px rgba(255, 255, 255, 0.493); /* Inner glow */
+  
+  transition: box-shadow 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+
+
+
+
+/* Hover Effect for Dynamic Shadows */
+.card:hover {
+  box-shadow: 
+    0 8px 15px #ffbf48, 
+    0 10px 25px #ffbf48, 
+    inset 0 -2px 15px rgba(255, 255, 255, 0.15);
+}  
+
+.card:last-child {
+  
+  justify-content: flex-end;
+}  
+
+.card-img {
+    /* clear and add new css */
+    
+  transition: all 0.5s;  
+  display: flex;
+  justify-content: center;
+}  
+.card {
+  transition: height 0.3s ease-in-out;
+}
+
+.card-img img {
+ /* delete */ 
+  transform: scale(1);
+  position: relative;
+  box-sizing: border-box;
+  width: 110px;
+  height: 100px;
+  border-radius: 15px;
+  border: 1px solid rgb(31, 30, 30);
+  background-color: #228b22;
+  background-image: linear-gradient(to top,transparent 10px,rgba(0,0,0,0.3) 10px,rgba(0,0,0,0.3) 13px,transparent 13px);
+}
+.hidden-paragraph {
+  text-align: center;
+  font-family: "Alexandria", sans-serif;
+  display: none;
+  font-size: 0.9rem;
+  color: #f3a20b;
+}
+
+.show-more-btn {
+  
+  font-family: "Alexandria", sans-serif;
+  background-color: #000000;
+  border: none;
+  border-radius: 12px;
+  color: #f3a20b;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.counter{
+  padding: 5px;
+  text-align: center;
+  color: #f3a20b;
+  margin: 5px;
+}
+.counters{
+  padding: 5px;
+  text-align: center;
+  color: #f3a20b;
+  margin: 5px;
+}
+#more {display: none;}
+
+.card-title {
+  text-align: center;
+  font-family: "Alexandria", sans-serif;
+  margin: 15px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--font-color);
+}  
+
+ p{
+  font-size: 4Px;
+}
+
+.card-subtitle {
+  height: 90px;
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--font-color-sub);
+}  
+
+.card-divider {
+  width: 100%;
+  border: 2px solid var(--main-color);
+  border-radius: 50px;
+}  
+
+.card-footer {
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}  
+
+.card-price {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--font-color);
+}  
+
+.card-price span {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--font-color-sub);
+}  
+
+.card-btn {
+  height: 35px;
+  background: var(--bg-color);
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+  padding: 0 15px;
+  transition: all 0.3s;
+}  
+
+.addtocard {
+  font-family: "Alexandria", sans-serif;
+  font-size: 10Px ;
+  width: 100%;
+  fill: var(--main-color);
+  transition: all 0.3s;
+}  
+
+.card-img:hover {
+  transform: translateY(-3px);
+}  
+
+.card-btn:hover {
+  border: 2px solid var(--main-focus);
+}  
+
+.card-btn:hover svg {
+  fill: var(--main-focus);
+}  
+
+.card-btn:active {
+  transform: translateY(3px);
+}  
+
+
+
+
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+.logo{
+  display: none;
+}
+  .carts {
+    margin: 10px;
+    width: 40%;
+  }
+
+  .card-img .img {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+      width: 100%;
+      height: 90px;
+  }
+
+  .card-title {
+      font-size: 1rem;
+      text-align: center;
+  }
+.nutrition-list{
+  align-items: center
+}
+  .card-subtitle {
+      font-size: 0.85rem;
+
+  }
+
+  .card-price {
+      font-size: 1.1rem;
+  }
+
+  .card-btn {
+      padding: 9px;
+  }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 769px) {
+  .card {
+      width: 250px;
+
+  }
+
+
+}
+
+
+i{
+  font-size: 30px;
+  color: #f3a20b;
+}
+
+/* General Reset */
+
+
+
+.contact-form-container {
+  height: 750px;
+    background-color: #1a1919;
+    padding: 20px 40%;
+    border-radius: 8px;
+    box-shadow: 0 4px 118px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 360px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffbf48;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffbf48;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ffbf48;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #f3a20b;
+}
+
+textarea {
+    resize: none;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #f3a20b;
+    color: #161616;
+    border: none;
+    border-radius: 14px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.submit-btn:hover {
+    background-color: #ffbf48;
+}
+
+
+.Totals{
+font-size: 18px;
+  color: #a78e60;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .contact-form-container {
+      padding: 15px;
+      width: 80%;
+      margin: 10px auto;
+  }
+
+  input, textarea {
+      font-size: 14px;
+      padding: 8px;
+      width: 90%;
+  }
+
+  .submit-btn {
+    
+      font-size: 16px;
+      padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+      font-size: 1.5rem;
+  }
+
+  input, textarea {
+      font-size: 12px;
+      padding: 6px;
+  }
+
+  .submit-btn {
+      font-size: 14px;
+      padding: 6px;
+  }
+}
+
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+  
+  header {
+      color: #f3a20b;
+      padding: 10px 3% ;
+      justify-content: space-between;
+  }
+
+
+  .logo {
+    padding-left: 250PX;
+      font-size: 2rem;
+  }
+
+  nav {
+    
+      display: none; /* إخفاء القائمة افتراضيًا */
+      flex-direction: column;
+      width: 100%;
+      margin-top: 10px;
+  }
+
+  nav a {
+      padding: 10px 0;
+      font-size: 1rem;
+      border-bottom: none;
+  }
+
+  nav.show {
+    
+      display: flex; /* إظهار القائمة عند تفعيل الزر */
+  }
+
+  /* زر للقائمة المنسدلة */
+  .menu-btn {
+    padding-top: -214px;
+      display: block;
+      font-size: 1.5rem;
+      cursor: pointer;
+  }
+
+  .navbaer{
+    justify-content: space-between;
+    display: flex;
+    align-items: end;
+  
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+      font-size: 1.8rem;
+  }
+
+  nav a {
+      font-size: 0.9rem;
+  }
+}
+
+
+/* styles.css */
+
+ .title-container {
+  text-align: center;
+  margin-top: 50px;
+  
+}
+
+.styled-title {
+  font-family: "Alexandria", sans-serif;
+  font-size: 2.5rem;
+  color: #f3a20b;
+  margin: 0;
+}
+ .styled-hr {
+  width: 50%;
+  height: 4px;
+  background-color: #f3a20b;
+  border: none;
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .styled-title {
+    font-size: 2rem; /* Smaller font size on smaller screens */
+  }
+
+  .styled-hr {
+    width: 70%; /* Make the horizontal rule wider on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .styled-title {
+    font-size: 1.5rem; /* Even smaller font size on very small screens */
+  }
+
+  .styled-hr {
+    width: 80%; /* Even wider on very small screens */
+  }
+}
+

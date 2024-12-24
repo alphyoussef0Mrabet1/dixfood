@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="icon" rel="icon" href="/img/logo.png">
+    <link rel="stylesheet" href="/style.css">
+    
+    <title>Dix Food</title>
+  </head>
+  <body>
+    
+    <header>
+
+<div class="navbaer">
+      <div class="menu-btn" onclick="toggleMenu()"><span class="navbar">☰</span></div>
+      <a href="#" class="logo">Dix <span>Food </span></a>
+    </div>
+      <!-- زر القائمة --> 
+          <nav id="navMenu">
+          <a href="#" class="active">Home</a>
+          <a href="/procut.html">menu</a>
+          <a href="#abonnement">abonnement</a>
+          <a href="#Contact">Contact</a>
+          <a href="/index.html">Marché</a>
+      </nav>
+  </header>
+  
+    <img  class="Untitled" src="/img/dix.gif" alt="">
+
+    
+  
+
+    <div class="title-container">
+      <h1 class="styled-title">اللحوم</h1>
+      <hr class="styled-hr">
+    </div>
+    
+  <section class="carts">
+    
+  <div class="card">
+    <div class="card-img"><div class="img"><img src="/img/صدر دجاج .jpg" alt=""></div></div>
+      <div class="card-title">صدر دجاج</div>
+      <div class="card-subtitle">
+        
+        <ul clas  s="nutrition-list">
+          <li>PROTEIN: <strong>31g</strong></li>
+          <li>CARB: <strong>0g</strong></li>
+          <li>FAT: <strong>3.6g</strong></li>
+          <li>CALORIES: <strong>165 </strong></li>
+      </ul>
+      </div>
+      <div class="counter">
+      <div id="counter-chicken">100g</div>
+      <button onclick="updateCounter('increase', 'counter-chicken')">+</button>
+      <button onclick="updateCounter('decrease', 'counter-chicken')">-</button>
+    </div>
+
+      <hr class="card-divider">
+      <div class="card-footer">
+          <div class="card-price">6.400<span>dt</span></div>
+          <button class="card-btn"
+          onclick="addToCart('صدر دجاج', 6.400, 31, 0, 3.6, 165, document.getElementById('counter-chicken').innerText)">
+<h1 class="addtocard">أضف</h1>
+        </button>
+      </div>
+  </div>
+
+  <div class="card">
+    <div class="card-img"><div class="img"><img src="/img/SAMEN.webp" alt=""></div></div>
+    <div class="card-title">سمان</div>
+    <div class="card-subtitle">
+      <ul class="nutrition-list">
+        <li>PROTEIN: <strong>30g</strong></li>
+        <li>CARB: <strong>0g</strong></li>
+        <li>FAT: <strong>4g</strong></li>
+        <li>CALORIES: <strong>160 </strong></li>
+    </ul>
+    </div>
+    <div class="counters">
+    <div id="counters-quail">1</div>
+    <button onclick="updateCounters('increase', 'counters-quail')">+</button>
+    <button onclick="updateCounters('decrease', 'counters-quail')">-</button>
+  </div>
+
+    <hr class="card-divider">
+    <div class="card-footer">
+      <div class="card-price">8<span>dt</span></div>
+      <button class="card-btn" 
+      onclick="addToCart('سمان', 800, 3000, 0, 400, 16000, document.getElementById('counters-quail').innerText)">
+      <h1 class="addtocard">أضف</h1>
+        </button>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-img"><div class="img"><img src="/img/JNE7.webp" alt=""></div></div>
+  <div class="card-title"> أجنحة دجاج</div>
+  <div class="card-subtitle">
+    <ul class="nutrition-list">
+      <li>PROTEIN: <strong>24g</strong></li>
+      <li>CARB: <strong>0g</strong></li>
+      <li>FAT: <strong>16g</strong></li>
+      <li>CALORIES: <strong>190 </strong></li>
+  </ul>
+  </div>
+  <div class="counter">
+    <div id="counter-Chickenwings">100g</div>
+    <button onclick="updateCounter('increase', 'counter-Chickenwings')">+</button>
+    <button onclick="updateCounter('decrease', 'counter-Chickenwings')">-</button>
+  </div>
+  <hr class="card-divider">
+  <div class="card-footer">
+      <div class="card-price"> 5.200 <span>dt</span></div>
+      <button class="card-btn" 
+      onclick="addToCart('أجنحة دجاج', 5.200, 24, 0, 16, 190, document.getElementById('counter-Chickenwings').innerText)">
+      <h1 class="addtocard">أضف</h1>    </button>
+  </div>
+</div>
+
+
+<div class="card">
+  <div class="card-img"><div class="img"><img src="/img/scalop.webp" alt=""></div></div>
+  <div class="card-title">فخذ دجاج</div>
+  <div class="card-subtitle">
+    <ul class="nutrition-list">
+      <li>PROTEIN: <strong>25g</strong></li>
+      <li>CARB: <strong>0g</strong></li>
+      <li>FAT: <strong>10g</strong></li>
+      <li>CALORIES: <strong>190</strong></li>
+  </ul>
+  </div>
+
+  <div class="counters">
+    <div id="counters-fater">1</div>
+    <button onclick="updateCounters('increase', 'counters-fater')">+</button>
+    <button onclick="updateCounters('decrease', 'counters-fater')">-</button>
+  </div>
+
+    <hr class="card-divider">
+    <div class="card-footer">
+      <div class="card-price">8<span>dt</span></div>
+      <button class="card-btn" 
+      onclick="addToCart('فخذ دجاج', 800, 2500, 0, 1000, 19000, document.getElementById('counters-fater').innerText)">
+      <h1 class="addtocard">أضف</h1></button>
+  </div>
+</div>
+
+
+<div class="card">
+  
+  <div class="card-img"><div class="img"><img src="/img/l7am.jpeg" alt=""></div></div>
+  <div class="card-title">لحم</div>
+  <div class="card-subtitle">
+    <ul class="nutrition-list">
+      <li>PROTEIN: <strong>31g</strong></li>
+      <li>CARB: <strong>0g</strong></li>
+      <li>FAT: <strong>3.6g</strong></li>
+      <li>CALORIES: <strong>165 </strong></li>
+    </ul>
+  </div>
+  <div class="counter">
+    <div id="counter-meat">100g</div>
+    <button onclick="updateCounter('increase', 'counter-meat')">+</button>
+    <button onclick="updateCounter('decrease', 'counter-meat')">-</button>
+  </div>
+  <hr class="card-divider">
+  <div class="card-footer">
+      <div class="card-price">6.400<span>dt</span></div>
+      <button class="card-btn" 
+      onclick="addToCart(' meat', 6.400, 31, 0, 3.6, 165, document.getElementById('counter-meat').innerText)">
+      <h1 class="addtocard">أضف</h1>    </button>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-img"><div class="img"><img src="/img/egg.jpg" alt=""></div></div>
+  <div class="card-title">عضم</div>
+  <div class="card-subtitle">
+    <ul class="nutrition-list">
+      <li>PROTEIN: <strong>6g</strong></li>
+      <li>CARB: <strong>0.6g</strong></li>
+      <li>FAT: <strong>5g</strong></li>
+      <li>CALORIES: <strong>68</strong></li>
+    </ul>
+  </div>
+  <div class="counters">
+    <div id="counters-egg">1</div>
+    <button onclick="updateCounters('increase', 'counters-egg')">+</button>
+    <button onclick="updateCounters('decrease', 'counters-egg')">-</button>
+  </div>
+  <hr class="card-divider">
+  <div class="card-footer">
+      <div class="card-price"> 0.800 <span>dt</span></div>
+      <button class="card-btn" 
+      onclick="addToCart('عضم', 80,  600, 60.000, 500, 6800, document.getElementById('counters-egg').innerText)">
+      <h1 class="addtocard">أضف</h1>      
+    </button>
+    
+    
+  </div>
+</div>
+
+</section>
+<div class="title-container">
+  <h1 class="styled-title">سمكة</h1>
+  <hr class="styled-hr">
+</div>
+<section class="carts">
+<div class="card">
+  <div class="card-img"><div class="img"><img src="/img/9arnit.jpeg" alt=""></div></div>
+  <div class="card-title">أخطبوط</div>
+  <div class="card-subtitle">
+    <ul class="nutrition-list">
+      <li>PROTEIN: <strong>29g</strong></li>
+      <li>CARB: <strong>4g</strong></li>
+      <li>FAT: <strong>1.4g</strong></li>
+      <li>CALORIES: <strong>166 </strong></li>
+  </ul>
+  </div>
+  <div class="counter">
+    <div id="counter-octopus">100g</div>
+    <button onclick="updateCounter('increase', 'counter-octopus')">+</button>
+    <button onclick="updateCounter('decrease', 'counter-octopus')">-</button>
+  </div>
+  <hr class="card-divider">
+  <div class="card-footer">
+      <div class="card-price"> 7.760 <span>dt</span></div>
+      <button class="card-btn" 
+      onclick="addToCart(' أخطبوط', 7.760 , 29, 4, 1.4, 166, document.getElementById('counter-octopus').innerText)">
+      <h1 class="addtocard">أضف</h1>    </button>
+  </div>
+</div>
+  <div class="card">
+    <div class="card-img"><div class="img"><img src="/img/ton.jpeg" alt=""></div></div>
+    <div class="card-title">تن</div>
+    <div class="card-subtitle">
+      <ul>
+        <li>PROTEIN: <strong>31g</strong></li>
+        <li>CARB: <strong>0g</strong></li>
+        <li>FAT: <strong>3.6g</strong></li>
+        <li>CALORIES: <strong>165 </strong></li>
+  </ul>
+  
+</div>
+<div class="counter">
+  <div id="counter-Ten">100g</div>
+  <button onclick="updateCounter('increase', 'counter-Ten')">+</button>
+  <button onclick="updateCounter('decrease', 'counter-Ten')">-</button>
+</div>
+    <hr class="card-divider">
+    <div class="card-footer">
+      <div class="card-price">6<span>dt</span></div>
+        <button class="card-btn" 
+        onclick="addToCart(' تن', 6.000, 29, 4, 1.4, 166, document.getElementById('counter-Ten').innerText)">
+        <h1 class="addtocard">أضف</h1>  
+      </button>
+    </div>
+</div>
+
+
+
+
+<div class="card">
+  <div class="card-img"><div class="img"><img src="/img/ton.jpeg" alt=""></div></div>
+  <div class="card-title">السوبيا</div>
+  <div class="card-subtitle">
+    <ul>
+      <li>PROTEIN: <strong>31g</strong></li>
+      <li>CARB: <strong>0g</strong></li>
+      <li>FAT: <strong>3.6g</strong></li>
+      <li>CALORIES: <strong>165 </strong></li>
+</ul>
+
+</div>
+<div class="counter">
+<div id="counter-Sobia">100g</div>
+<button onclick="updateCounter('increase', 'counter-Sobia')">+</button>
+<button onclick="updateCounter('decrease', 'counter-Sobia')">-</button>
+</div>
+  <hr class="card-divider">
+  <div class="card-footer">
+    <div class="card-price">6<span>dt</span></div>
+      <button class="card-btn" 
+      onclick="addToCart(' Sobia', 6.000, 29, 4, 1.4, 166, document.getElementById('counter-Sobia').innerText)">
+      <h1 class="addtocard">أضف</h1>  
+    </button>
+  </div>
+</div>
+</section>
+
+<div class="title-container">
+  <h1 class="styled-title">الفواكه الجافة</h1>
+  <hr class="styled-hr">
+</div>
+
+<section class="carts">
+
+
+
+
+  <div class="card">
+    <div class="card-img"><div class="img"><img src="/img/بوفريوة.jpg" alt=""></div></div>
+    <div class="card-title">بوفريوة </div>
+    <div class="card-subtitle">
+      <ul>
+        <li>PROTEIN: <strong>20g</strong></li>
+        <li>CARB: <strong>28g</strong></li>
+        <li>FAT: <strong>45g</strong></li>
+        <li>CALORIES: <strong>567 </strong></li>
+  </ul>
+  
+</div>
+
+<div class="counter">
+  <div id="counter-Boufrioua">100g</div>
+  <button onclick="updateCounter('increase', 'counter-Boufrioua')">+</button>
+  <button onclick="updateCounter('decrease', 'counter-Boufrioua')">-</button>
+</div>
+
+    <hr class="card-divider">
+    <div class="card-footer">
+      <div class="card-price"> 11.600<span>dt</span></div>
+        <button class="card-btn" 
+        onclick="addToCart('Boufrioua',11.600, 20, 28, 45, 567, document.getElementById('counter-Boufrioua').innerText)">
+        <h1 class="addtocard">أضف</h1>  
+      </button>
+    </div>
+</div>
+
+
+<div class="card">
+  <div class="card-img"><div class="img"><img src="/img/لوز.jpg" alt=""></div></div>
+  <div class="card-title">لوز</div>
+  <div class="card-subtitle">
+    <ul>
+      <li>PROTEIN: <strong>18g</strong></li>
+      <li>CARB: <strong>23g</strong></li>
+      <li>FAT: <strong>49g</strong></li>
+      <li>CALORIES: <strong>573</strong></li>
+</ul>
+
+</div>
+<div class="counter">
+  <div id="counter-AMOND">100g</div>
+  <button onclick="updateCounter('increase', 'counter-AMOND')">+</button>
+  <button onclick="updateCounter('decrease', 'counter-AMOND')">-</button>
+</div>
+
+  <hr class="card-divider">
+  <div class="card-footer">
+    <div class="card-price"> 7.600 <span>dt</span></div>
+      <button class="card-btn" 
+      onclick="addToCart('لوز', 7.600, 18, 23, 49, 573 , document.getElementById('counter-AMOND').innerText)">
+      <h1 class="addtocard">أضف</h1>
+    </button>
+  </div>
+</div>
+
+
+
+<div class="card">
+  <div class="card-img"><div class="img"><img src="/img/جلجلان.jpeg" alt=""></div></div>
+  <div class="card-title">جلجلان</div>
+  <div class="card-subtitle">
+    <ul>
+      <li>PROTEIN: <strong>18g</strong></li>
+      <li>CARB: <strong>23g</strong></li>
+      <li>FAT: <strong>49g</strong></li>
+      <li>CALORIES: <strong>573</strong></li>
+</ul>
+
+</div>
+<div class="counter">
+  <div id="counter-Sesame">100g</div>
+  <button onclick="updateCounter('increase', 'counter-Sesame')">+</button>
+  <button onclick="updateCounter('decrease', 'counter-Sesame')">-</button>
+</div>
+
+  <hr class="card-divider">
+  <div class="card-footer">
+    <div class="card-price"> 123.45 <span>dt</span></div>
+      <button class="card-btn" 
+      onclick="addToCart('جلجلان', 123.45, 18, 23, 49, 573 , document.getElementById('counter-Sesame').innerText)">
+      <h1 class="addtocard">أضف</h1>
+    </button>
+  </div>
+</div>
+
+
+
+
+</section>
+
+
+<div class="title-container">
+  <h1 class="styled-title">الخضار</h1>
+  <hr class="styled-hr">
+</div>
+
+
+<section class="carts">
+<div class="card">
+  <div class="card-img"><div class="img"><img src="/img/tomat.jpeg" alt=""></div></div>
+  <div class="card-title">طماطم</div>
+  <div class="card-subtitle">
+    <ul>
+      <li>PROTEIN: <strong>1g</strong></li>
+      <li>CARB: <strong>4g</strong></li>
+      <li>FAT: <strong>0.2g</strong></li>
+      <li>CALORIES: <strong>18 </strong></li>
+</ul>
+
+</div>
+  <hr class="card-divider">
+  <div class="card-footer">
+    <div class="card-price"> 123.45 <span>dt</span></div>
+      <button class="card-btn" 
+      onclick="addToCart('طماطم', 123.45, 1, 4, 0.2, 18 )">
+      <h1 class="addtocard">أضف</h1>
+    </button>
+  </div>
+</div>
+
+
+<div class="card">
+  <div class="card-img"><div class="img"><img src="/img/fa9ous.jpg" alt=""></div></div>
+  <div class="card-title">فقوس</div>
+  <div class="card-subtitle">
+    <ul>
+      <li>PROTEIN: <strong>1g</strong></li>
+      <li>CARB: <strong>4g</strong></li>
+      <li>FAT: <strong>0.1g</strong></li>
+      <li>CALORIES: <strong>16 </strong></li>
+</ul>
+
+</div>
+  <hr class="card-divider">
+  <div class="card-footer">
+    <div class="card-price"> 123.45 <span>dt</span></div>
+      <button class="card-btn" 
+      onclick="addToCart('فقوس', 123.45, 1, 4, 0.1, 16 )">
+      <h1 class="addtocard">أضف</h1>
+    </button>
+  </div>
+</div>
+
+
+<div class="card">
+  <div class="card-img"><div class="img"><img src="/img/bsal.jpeg" alt=""></div></div>
+  <div class="card-title">بصل</div>
+  <div class="card-subtitle">
+    <ul>
+      <li>PROTEIN: <strong>1.1g</strong></li>
+      <li>CARB: <strong>9.3g</strong></li>
+      <li>FAT: <strong>0.1g</strong></li>
+      <li>CALORIES: <strong>40 </strong></li>
+</ul>
+
+</div>
+  <hr class="card-divider">
+  <div class="card-footer">
+    <div class="card-price"> 123.45 <span>dt</span></div>
+      <button class="card-btn" 
+      onclick="addToCart('بصل', 123.45, 1.1, 9.3, 0.1,40 )">
+      <h1 class="addtocard">أضف</h1>
+    </button>
+  </div>
+</div>
+
+
+<div class="card">
+  <div class="card-img"><div class="img"><img src="/img/بطاطا.jpg" alt=""></div></div>
+  <div class="card-title">بطاطا</div>
+  <div class="card-subtitle">
+    <ul>
+      <li>PROTEIN: <strong>2g</strong></li>
+      <li>CARB: <strong>17g</strong></li>
+      <li>FAT: <strong>0</strong></li>
+      <li>CALORIES: <strong>77</strong></li>
+</ul>
+
+</div>
+<div class="counter">
+  <div id="counter-بطاطا">100g</div>
+  <button onclick="updateCounter('increase', 'counter-بطاطا')">+</button>
+  <button onclick="updateCounter('decrease', 'counter-بطاطا')">-</button>
+</div>
+  <hr class="card-divider">
+  <div class="card-footer">
+    <div class="card-price"> 4<span>dt</span></div>
+      <button class="card-btn" 
+      onclick="addToCart('بطاطا', 4.000, 2, 17, 0,77 ,document.getElementById('counter-بطاطا').innerText)">
+      <h1 class="addtocard">أضف</h1>
+    </button>
+  </div>
+</div>
+
+
+<div class="card">
+  <div class="card-img"><div class="img"><img src="/img/loublia.jpg" alt=""></div></div>
+  <div class="card-title"> لوبيا خضراء</div>
+  <div class="card-subtitle">
+    <ul>
+      <li>PROTEIN: <strong>2g</strong></li>
+      <li>CARB: <strong>7g</strong></li>
+      <li>FAT: <strong>0.2g</strong></li>
+      <li>CALORIES: <strong>31 </strong></li>
+</ul>
+
+</div>
+  <hr class="card-divider">
+  <div class="card-footer">
+    <div class="card-price"> 123.45 <span>dt</span></div>
+      <button class="card-btn" 
+      onclick="addToCart('لوبيا خضراء', 123.45, 2, 7, 0.2, 31 )">
+      <h1 class="addtocard">أضف</h1>
+    </button>
+  </div>
+</div>
+
+
+<div class="card">
+  <div class="card-img"><div class="img"><img src="/img/قرع أخضر.webp" alt=""></div></div>
+  <div class="card-title"> قرع أخضر</div>
+  <div class="card-subtitle">
+    <ul>
+      <li>PROTEIN: <strong>1g</strong></li>
+      <li>CARB: <strong>7g</strong></li>
+      <li>FAT: <strong>0.1g</strong></li>
+      <li>CALORIES: <strong>20 </strong></li>
+</ul>
+
+</div>
+  <hr class="card-divider">
+  <div class="card-footer">
+    <div class="card-price"> 123.45 <span>dt</span></div>
+      <button class="card-btn" 
+      onclick="addToCart(' قرع أخضر', 123.45, 1, 7, 0.1, 20 )">
+      <h1 class="addtocard">أضف</h1>
+    </button>
+  </div>
+</div>
+
+
+
+
+
+</section>
+
+
+
+<div class="title-container">
+  <h1 class="styled-title">المعجنات والخبز</h1>
+  <hr class="styled-hr">
+</div>
+
+
+<section class="carts">
+
+
+  <div class="card">
+    <div class="card-img"><div class="img"><img src="/img/pasta.webp" alt=""></div></div>
+    <div class="card-title">مقرونة</div>
+    <div class="card-subtitle">
+      <ul>
+        <li>PROTEIN: <strong>5g</strong></li>
+        <li>CARB: <strong>25g</strong></li>
+        <li>FAT: <strong>1g</strong></li>
+        <li>CALORIES: <strong>131 </strong></li>
+  </ul>
+  
+  </div>
+  <div class="counter">
+    <div id="counter-pasta">100g</div>
+    <button onclick="updateCounter('increase', 'counter-pasta')">+</button>
+    <button onclick="updateCounter('decrease', 'counter-pasta')">-</button>
+  </div>
+    <hr class="card-divider">
+    <div class="card-footer">
+      <div class="card-price">6.40<span>dt</span></div>
+        <button class="card-btn" 
+        onclick="addToCart('مقرونة', 6.40, 5, 25, 1, 131, document.getElementById('counter-pasta').innerText )">
+        <h1 class="addtocard">أضف</h1>  
+      </button>
+    </div>
+  </div>
+  
+  
+  <div class="card">
+    <div class="card-img"><div class="img"><img src="/img/images (6).jpeg" alt=""></div></div>
+    <div class="card-title">نودلز</div>
+    <div class="card-subtitle">
+      <ul>
+        <li>PROTEIN: <strong>4g</strong></li>
+        <li>CARB: <strong>25g</strong></li>
+        <li>FAT: <strong>1g</strong></li>
+        <li>CALORIES: <strong>138 </strong></li>
+  </ul>
+  
+  </div>
+  <div class="counter">
+    <div id="counter-noudels">100g</div>
+    <button onclick="updateCounter('increase', 'counter-noudels')">+</button>
+    <button onclick="updateCounter('decrease', 'counter-noudels')">-</button>
+  </div>
+    <hr class="card-divider">
+    <div class="card-footer">
+      <div class="card-price">6<span>dt</span></div>
+        <button class="card-btn" 
+        onclick="addToCart('نودلز', 6, 4, 25, 1,138 , document.getElementById('counter-noudels').innerText)">
+        <h1 class="addtocard">أضف</h1>  
+      </button>
+    </div>
+  </div>
+  
+  
+  <div class="card">
+    <div class="card-img"><div class="img"><img src="/img/rice-grain.jpg" alt=""></div></div>
+    <div class="card-title"> أرز</div>
+    <div class="card-subtitle">
+      <ul>
+        <li>PROTEIN: <strong>2.7g</strong></li>
+        <li>CARB: <strong>28g</strong></li>
+        <li>FAT: <strong>0.3g</strong></li>
+        <li>CALORIES: <strong>130</strong></li>
+  </ul>
+  
+  </div>
+  <div class="counter">
+    <div id="counter-rice">100g</div>
+    <button onclick="updateCounter('increase', 'counter-rice')">+</button>
+    <button onclick="updateCounter('decrease', 'counter-rice')">-</button>
+  </div>
+    <hr class="card-divider">
+    <div class="card-footer">
+      <div class="card-price"> 0.760 <span>dt</span></div>
+        <button class="card-btn" 
+        onclick="addToCart(' أرز', 0.760, 2.7, 28, 0.3, 130 , document.getElementById('counter-rice').innerText)">
+        <h1 class="addtocard">أضف</h1>  
+      </button>
+    </div>
+  </div>
+  
+  
+  <div class="card">
+    <div class="card-img"><div class="img"><img src="/img/برغل.jpg" alt=""></div></div>
+    <div class="card-title"> برغل</div>
+    <div class="card-subtitle">
+      <ul>
+        <li>PROTEIN: <strong>12g</strong></li>
+        <li>CARB: <strong>33g</strong></li>
+        <li>FAT: <strong>1g</strong></li>
+        <li>CALORIES: <strong>150 </strong></li>
+  </ul>
+  
+  </div>
+  <div class="counter">
+    <div id="counter-bulgur">100g</div>
+    <button onclick="updateCounter('increase', 'counter-bulgur')">+</button>
+    <button onclick="updateCounter('decrease', 'counter-bulgur')">-</button>
+  </div>
+    <hr class="card-divider">
+    <div class="card-footer">
+      <div class="card-price"> 0.640<span>dt</span></div>
+        <button class="card-btn" 
+        onclick="addToCart('  برغل',0.640, 12, 33, 1, 150 , document.getElementById('counter-bulgur').innerText)">
+        <h1 class="addtocard">أضف</h1>  
+      </button>
+    </div>
+  </div>
+  
+  
+  
+  <div class="card">
+    <div class="card-img"><div class="img"><img src="/img/خبز قمح.jpg" alt=""></div></div>
+    <div class="card-title"> خبز قمح</div>
+    <div class="card-subtitle">
+      <ul>
+        <li>PROTEIN: <strong>6g</strong></li>
+        <li>CARB: <strong>12g</strong></li>
+        <li>FAT: <strong>1g</strong></li>
+        <li>CALORIES: <strong>80 </strong></li>
+  </ul>
+  
+  </div>
+  <div class="counters">
+    <div id="counters-wheatbread">1</div>
+    <button onclick="updateCounters('increase', 'counters-wheatbread')">+</button>
+    <button onclick="updateCounters('decrease', 'counters-wheatbread')">-</button>
+  </div>
+    <hr class="card-divider">
+    <div class="card-footer">
+      <div class="card-price"> 2.400 <span>dt</span></div>
+        <button class="card-btn" 
+        onclick="addToCart('خبز قمح', 240.00, 600, 1200, 100, 8000, document.getElementById('counters-wheatbread').innerText)">
+        <h1 class="addtocard">أضف</h1>  
+      </button>
+    </div>
+  </div>
+
+</section>
+
+
+
+
+
+
+<div class="title-container">
+  <h1 class="styled-title"> جبن</h1>
+  <hr class="styled-hr">
+</div>
+
+
+
+
+
+
+<section class="carts">
+
+
+  <div class="card">
+    <div class="card-img"><div class="img"><img src="/img/Fromagesicilien.jpeg" alt=""></div></div>
+    <div class="card-title">جبن سيسلي</div>
+    <div class="card-subtitle">
+      <ul>
+        <li>PROTEIN: <strong>21g</strong></li>
+        <li>CARB: <strong>3g</strong></li>
+        <li>FAT: <strong>30g</strong></li>
+        <li>CALORIES: <strong>376</strong></li>
+  </ul>
+  
+  </div>
+  <div class="counter">
+    <div id="counter-Fromagesicilien">100g</div>
+    <button onclick="updateCounter('increase', 'counter-Fromagesicilien')">+</button>
+    <button onclick="updateCounter('decrease', 'counter-Fromagesicilien')">-</button>
+  </div>
+    <hr class="card-divider">
+    <div class="card-footer">
+      <div class="card-price">5.6<span>dt</span></div>
+        <button class="card-btn" 
+        onclick="addToCart('جبن سيسلي',5.6, 5, 25, 1, 131, document.getElementById('counter-Fromagesicilien').innerText )">
+        <h1 class="addtocard">أضف</h1>  
+      </button>
+    </div>
+  </div>
+  
+  
+  <div class="card">
+    <div class="card-img"><div class="img"><img src="/img/Mozzarella.jpeg" alt=""></div></div>
+    <div class="card-title">موزريلا</div>
+    <div class="card-subtitle">
+      <ul>
+        <li>PROTEIN: <strong>18g</strong></li>
+        <li>CARB: <strong>2g</strong></li>
+        <li>FAT: <strong>17g</strong></li>
+        <li>CALORIES: <strong>280 kcal</strong></li>
+  </ul>
+  
+  </div>
+  <div class="counter">
+    <div id="counter-Mozzarella">100g</div>
+    <button onclick="updateCounter('increase', 'counter-Mozzarella')">+</button>
+    <button onclick="updateCounter('decrease', 'counter-Mozzarella')">-</button>
+  </div>
+    <hr class="card-divider">
+    <div class="card-footer">
+      <div class="card-price">6<span>dt</span></div>
+        <button class="card-btn" 
+        onclick="addToCart('موزريلا', 6, 4, 25, 1,138 , document.getElementById('counter-Mozzarella').innerText)">
+        <h1 class="addtocard">أضف</h1>  
+      </button>
+    </div>
+  </div>
+  
+  
+  
+
+</section>
+
+
+
+
+
+
+
+
+
+<div class="contact-form-container">
+        <h2>Commander </h2>
+        <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+            <!-- Web3Forms Access Key -->
+            <input type="hidden" name="access_key" value="0b8b335e-645e-4256-88a9-64c8b4de8676" />
+
+            <!-- Full Name -->
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+
+            
+            <!-- Phone Number -->
+            <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+        </div>
+        
+        <!-- Location -->
+        <div class="form-group">
+          <label for="location">Location</label>
+          <input type="text" id="location" name="location" placeholder="Your Location" required>
+        </div>
+        
+        <!-- Message -->
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+        </div>
+        
+
+            <!-- Submit Button -->
+<!-- Hidden cart details and total price -->
+            <textarea name="cartDetails" id="cartDetails" hidden></textarea>
+            <input type="hidden" name="totalPrice" id="totalPrice" />
+
+            <button type="submit" class="submit-btn">Send Cart to Email</button>
+        </form>
+
+
+
+
+
+
+
+      
+<div class="cart">
+  <h2>Your Cart</h2>
+  <div id="cartItems"></div>
+  <div class="Totals">
+    <strong>Total: $<span id="total">0</span></strong>
+
+
+
+  <!-- Nutritional Totals -->
+  <div>
+    <strong>Total Protein: <span id="totalProtein">0</span>g</strong>
+  </div>
+  <div>
+    <strong>Total Carbs: <span id="totalCarb">0</span>g</strong>
+  </div>
+  <div>
+    <strong>Total Fat: <span id="totalFat">0</span>g</strong>
+  </div>
+  <div>
+    <strong>Total Calories: <span id="totalCalories">0</span> kcal</strong>
+  </div>
+
+  <!-- Delivery Charge -->
+<div>
+  <span>Delivery Charge: </span><span id="deliveryCharge">4.00</span> DT
+</div>
+  </div>
+
+
+
+
+
+  
+<script src="/card.js"></script>
+</body>
+</html>

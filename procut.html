@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="/style.css"> <!-- ملف CSS الخاص بك -->
+  </head>
+  <body>
+    
+    
+    <header>
+      <div class="navbaer">
+        <div class="menu-btn" onclick="toggleMenu()"><span class="navbar">☰</span></div>
+        <a href="#" class="logo">Dix <span>Food </span></a>
+      </div>
+      <!-- زر القائمة --> 
+      <nav id="navMenu">
+        <a href="#" class="active">Home</a>
+        <a href="/procut.html">menu</a>
+        <a href="#abonnement">abonnement</a>
+        <a href="#Contact">Contact</a>
+        <a href="/index.html">Marché</a>
+      </nav>
+      <a href="/card.html" class="view-cart-btn"><i class="fa-solid fa-cart-shopping"></i></a>
+    </header>
+
+  <img  class="Untitled" src="/img/dix.gif" alt="">
+
+      
+  
+
+  <div class="title-container">
+    <h1 class="styled-title">Nouilles</h1>
+    <hr class="styled-hr">
+  </div>
+
+
+  
+
+      
+
+  
+  
+  
+<section class="carts">
+  
+  <div class="card">
+    <div class="card-img">
+        <div class="img"><img src="/img/noudls.jpg" alt=""></div>
+    </div>
+    <div class="card-title">Nouilles Chinoises Poulet</div>
+    <div class="card-subtitle">
+        <ul class="nutrition-list">
+            <li>PROTEIN: <strong>32g</strong></li>
+            <li>CARB: <strong>32g</strong></li>
+            <li>FAT: <strong>3.2g</strong></li>
+            <li>CALORIES: <strong>280</strong></li>
+          </ul>
+        </div>
+        
+        <div class="counters">
+          <div id="counters-Nouilles">1</div>
+          <button onclick="updateCounters('increase', 'counters-Nouilles')">+</button>
+          <button onclick="updateCounters('decrease', 'counters-Nouilles')">-</button>
+        </div>
+        
+    <hr class="card-divider">
+    <div class="card-footer">
+      <div class="card-price">18<span>dt</span></div>
+      <button class="card-btn" 
+      onclick="addToCart('Nouilles Chinoises Poulet', 1800, 3200, 3200, 302.2, 28000, document.getElementById('counters-Nouilles').innerText)">
+      <h1 class="addtocard">أضف</h1>
+    </button>
+  </div>
+  <div class="card-more">
+      <button class="show-more-btn" onclick="toggleParagraph(this)">عرض المزيد</button>
+      <p class="hidden-paragraph">
+          نجيوكم بتجربة مهبولة من تايلاند... حاجة موش مقرونة عادية، بل "Nouilles" مخدومة بعجينة الروز. 
+          الصلصة؟ بدل صلصة الطماطم العادية، تلقى الصوجا (soja) اللي هي صوص مالحة متعدلة بالنشا.
+          <br>
+          وإذا تحل البلا متاعك، تلقى شبعة سكالوب (escalope) تشهي! وينو اللي يحب يزيد المیزان بالنظيف؟
+          برّة ذوق، وكول وإحنا مضمونين!
+      </p>
+  </div>
+</div>
+
+
+  
+<div class="card">
+  <div class="card-img">
+      <div class="img"><img src="/img/Trio de Poulet.jpg" alt=""></div>
+  </div>
+  <div class="card-title">Trio de Poulet</div>
+  <div class="card-subtitle">
+      <ul class="nutrition-list">
+          <li>PROTEIN: <strong>101g</strong></li>
+          <li>CARB: <strong>35g</strong></li>
+          <li>FAT: <strong>6.8g</strong></li>
+          <li>CALORIES: <strong>632</strong></li>
+        </ul>
+      </div>
+      
+      <div class="counters">
+        <div id="counters-Trio de Poulet">1</div>
+        <button onclick="updateCounters('increase', 'counters-Trio de Poulet')">+</button>
+        <button onclick="updateCounters('decrease', 'counters-Trio de Poulet')">-</button>
+      </div>
+      
+  <hr class="card-divider">
+  <div class="card-footer">
+    <div class="card-price">15.3<span>dt</span></div>
+    <button class="card-btn" 
+    onclick="addToCart('Trio de Poulet', 1530.00, 10100, 3500, 680.8, 63200, document.getElementById('counters-Trio de Poulet').innerText)">
+    <h1 class="addtocard">أضف</h1>
+  </button>
+</div>
+<div class="card-more">
+    <button class="show-more-btn" onclick="toggleParagraph(this)">عرض المزيد</button>
+    <p class="hidden-paragraph">
+      الطليان نقولو لحاجة فاها تلاثة مكونات (trio)... لهنا باش نحكيو على (trio) متع بروشاتات يعني تلاثة بروشاتات متع دجاج مختلفين على بعضهم .... باش تلقى وحدة مخدومة بالصوجا و وحدة مخدومة بالموتارد و الأخرى بالاسكنجبير ... وبخلاف الجو أذايا الكل باش تقابل (boule de riz) متكية بحذاهم نقصد كعبورة كبيرة متع روز...
+    </p>
+</div>
+</div>
+
+<div class="card">
+  <div class="card-img">
+      <div class="img"><img src="/img/Bourghoul pouletBourghoul poulet.jpg" alt=""></div>
+  </div>
+  <div class="card-title">Bourghoul poulet</div>
+  <div class="card-subtitle">
+      <ul class="nutrition-list">
+          <li>PROTEIN: <strong>28.5g</strong></li>
+          <li>CARB: <strong>25g</strong></li>
+          <li>FAT: <strong>2.3g</strong></li>
+          <li>CALORIES: <strong>233</strong></li>
+        </ul>
+      </div>
+      
+      <div class="counters">
+        <div id="counters-Bourghoul poulet">1</div>
+        <button onclick="updateCounters('increase', 'counters-Bourghoul poulet')">+</button>
+        <button onclick="updateCounters('decrease', 'counters-Bourghoul poulet')">-</button>
+      </div>
+      
+  <hr class="card-divider">
+  <div class="card-footer">
+    <div class="card-price">11<span>dt</span></div>
+    <button class="card-btn" 
+    onclick="addToCart('Bourghoul poulet', 1100, 2850.5, 2500, 230.0, 23300, document.getElementById('counters-Bourghoul poulet').innerText)">
+    <h1 class="addtocard">أضف</h1>
+  </button>
+</div>
+<div class="card-more">
+    <button class="show-more-btn" onclick="toggleParagraph(this)">عرض المزيد</button>
+    <p class="hidden-paragraph">
+      برجولية كي تقول healthy تقول برغل ... أذايا خويا صحن برغل متغطي بالسكالوب و الخضرة.... ملخر حاجة صحية...
+    </p>
+</div>
+</div>
+
+
+
+<div class="card">
+  <div class="card-img">
+      <div class="img"><img src="/img/Macaroni complet poulet.jpg" alt=""></div>
+  </div>
+  <div class="card-title">Macaroni complet poulet</div>
+  <div class="card-subtitle">
+      <ul class="nutrition-list">
+          <li>PROTEIN: <strong>31g</strong></li>
+          <li>CARB: <strong>38g</strong></li>
+          <li>FAT: <strong>2.9g</strong></li>
+          <li>CALORIES: <strong>315.5</strong></li>
+        </ul>
+      </div>
+      
+      <div class="counters">
+        <div id="counters-Macaroni complet poulet">1</div>
+        <button onclick="updateCounters('increase', 'counters-Macaroni complet poulet')">+</button>
+        <button onclick="updateCounters('decrease', 'counters-Macaroni complet poulet')">-</button>
+      </div>
+      
+  <hr class="card-divider">
+  <div class="card-footer">
+    <div class="card-price">14.6<span>dt</span></div>
+    <button class="card-btn" 
+    onclick="addToCart('Macaroni complet poulet', 1460, 3100, 3800, 290.0, 31550, document.getElementById('counters-Macaroni complet poulet').innerText)">
+    <h1 class="addtocard">أضف</h1>
+  </button>
+</div>
+<div class="card-more">
+    <button class="show-more-btn" onclick="toggleParagraph(this)">عرض المزيد</button>
+    <p class="hidden-paragraph">
+      يا ولدي قلك الhealthy مستعرف بالمقرونة... أما مش أي مقرونة أذيا صاحبي مقرونة قمح محصودة... برشا ألياف و برشا فيتامينات وجماعة البروتين رانا مانسيناكمش ... مقرونتنا دوب ما تسلم علاها وباش تبدى تاكل فاها باش تودك بشبعة اسكالوب...
+    </p>
+</div>
+</div>
+
+
+
+<div class="card">
+  <div class="card-img">
+      <div class="img"><img src="/img/Cuisses poulet aux légumes.jpg" alt=""></div>
+  </div>
+  <div class="card-title">Cuisses poulet aux légumes</div>
+  <div class="card-subtitle">
+      <ul class="nutrition-list">
+          <li>PROTEIN: <strong>34.2g</strong></li>
+          <li>CARB: <strong>38.5g</strong></li>
+          <li>FAT: <strong>9.6g</strong></li>
+          <li>CALORIES: <strong>430</strong></li>
+        </ul>
+      </div>
+      
+      <div class="counters">
+        <div id="counters-Cuisses poulet aux légumes">1</div>
+        <button onclick="updateCounters('increase', 'counters-Cuisses poulet aux légumes')">+</button>
+        <button onclick="updateCounters('decrease', 'counters-Cuisses poulet aux légumes')">-</button>
+      </div>
+      
+  <hr class="card-divider">
+  <div class="card-footer">
+    <div class="card-price">14<span>dt</span></div>
+    <button class="card-btn" 
+    onclick="addToCart('Cuisses poulet aux légumes', 1400, 3420, 3850, 960.0, 43000, document.getElementById('counters-Cuisses poulet aux légumes').innerText)">
+    <h1 class="addtocard">أضف</h1>
+  </button>
+</div>
+<div class="card-more">
+    <button class="show-more-btn" onclick="toggleParagraph(this)">عرض المزيد</button>
+    <p class="hidden-paragraph">
+      فخذ متع دجاج يخرج مالفور و يتحط في البلا (plat) و تجي بجنبو خضرة مسوطيا... برشا بروتين و برشا فيتامين ...
+    </p>
+</div>
+</div>
+
+<div class="card">
+  <div class="card-img">
+      <div class="img"><img src="/img/Caille rotti.jpg" alt=""></div>
+  </div>
+  <div class="card-title">Caille rotti</div>
+  <div class="card-subtitle">
+      <ul class="nutrition-list">
+          <li>PROTEIN: <strong>68.3g</strong></li>
+          <li>CARB: <strong>32g</strong></li>
+          <li>FAT: <strong>42.5g</strong></li>
+          <li>CALORIES: <strong>760.5</strong></li>
+        </ul>
+      </div>
+      
+      <div class="counters">
+        <div id="counters-Caille rotti">1</div>
+        <button onclick="updateCounters('increase', 'counters-Caille rotti')">+</button>
+        <button onclick="updateCounters('decrease', 'counters-Caille rotti')">-</button>
+      </div>
+      
+  <hr class="card-divider">
+  <div class="card-footer">
+    <div class="card-price">13.2<span>dt</span></div>
+    <button class="card-btn" 
+    onclick="addToCart('Caille rotti', 1320, 6830, 3200, 4250.0, 76050, document.getElementById('counters-Caille rotti').innerText)">
+    <h1 class="addtocard">أضف</h1>
+  </button>
+</div>
+<div class="card-more">
+    <button class="show-more-btn" onclick="toggleParagraph(this)">عرض المزيد</button>
+    <p class="hidden-paragraph">
+      لعب المرة هاذي ولا بالسمان... مانيش نحكي علي السمانة متع الجومب (jambe)... أما راني نقصد في كعبة سمان روتي والله نحكي برسمي...وطلعت محشية بالروز والجبن و”النعناع الشايح. الحاسيلو حاجة ماصارتش...
+    </p>
+</div>
+</div>
+
+
+
+
+
+
+
+<div class="card">
+  <div class="card-img">
+      <div class="img"><img src="/img/Caille rotti.jpg" alt=""></div>
+  </div>
+  <div class="card-title">Ailerons de poulet</div>
+  <div class="card-subtitle">
+      <ul class="nutrition-list">
+          <li>PROTEIN: <strong>68.3g</strong></li>
+          <li>CARB: <strong>32g</strong></li>
+          <li>FAT: <strong>42.5g</strong></li>
+          <li>CALORIES: <strong>760.5</strong></li>
+        </ul>
+      </div>
+      
+      <div class="counters">
+        <div id="counters-Caille rotti">1</div>
+        <button onclick="updateCounters('increase', 'counters-Caille rotti')">+</button>
+        <button onclick="updateCounters('decrease', 'counters-Caille rotti')">-</button>
+      </div>
+      
+  <hr class="card-divider">
+  <div class="card-footer">
+    <div class="card-price">13.2<span>dt</span></div>
+    <button class="card-btn" 
+    onclick="addToCart('Caille rotti', 1320, 6830, 3200, 4250.0, 76050, document.getElementById('counters-Caille rotti').innerText)">
+    <h1 class="addtocard">أضف</h1>
+  </button>
+</div>
+<div class="card-more">
+    <button class="show-more-btn" onclick="toggleParagraph(this)">عرض المزيد</button>
+    <p class="hidden-paragraph">
+      جبدنا على القطايع الكل متع الدجاج... أما فما قطعة ماحكيناش منع جواج مسوطين ومرشوشين بالجلجلان و مصبوب علاهم العسل... حاجة مقربعة وبنينة وصحية...    </p>
+</div>
+</div>
+
+
+
+</div>
+
+
+
+
+  <script src="/card.js"></script> 
+</body>
+</html>
