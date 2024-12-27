@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="/style.css"> <!-- ملف CSS الخاص بك -->
+</head>
+<body>
+
+
+  <header>
+    <div class="navbaer">
+      <div class="menu-btn" onclick="toggleMenu()"><span class="navbar">☰</span></div>
+      <a href="#" class="logo">Dix <span>Food </span></a>
+    </div>
+    <!-- زر القائمة --> 
+    <nav id="navMenu">
+      <a href="#" class="active">Home</a>
+      <a href="/procut.html">menu</a>
+      <a href="#abonnement">abonnement</a>
+      <a href="#Contact">Contact</a>
+      <a href="/index.html">Marché</a>
+    </nav>
+    <a href="/card.html" class="view-cart-btn"><i class="fa-solid fa-cart-shopping"></i></a>
+  </header>
+
+<img  class="Untitled" src="/img/dix.gif" alt="">
+
+    
+
+
+  <div class="contact-form-container">
+    <h2>Commander </h2>
+    <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+        <!-- Web3Forms Access Key -->
+        <input type="hidden" name="access_key" value="0b8b335e-645e-4256-88a9-64c8b4de8676" />
+
+        <!-- Full Name -->
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
+
+        
+        <!-- Phone Number -->
+        <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+    </div>
+    
+    <!-- Location -->
+    <div class="form-group">
+      <label for="location">Location</label>
+      <input type="text" id="location" name="location" placeholder="Your Location" required>
+    </div>
+    
+    <!-- Message -->
+    <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+    </div>
+    
+
+        <!-- Submit Button -->
+        <textarea name="cartDetails" id="cartDetails" hidden></textarea>
+        <input type="hidden" name="totalPrice" id="totalPrice" />
+        <button type="submit" class="submit-btn">Send Cart to Email</button>
+    </form>
+
+
+
+
+    <div class="cart">
+      <h2>Your Cart</h2>
+      <div id="cartItems"></div>
+      <div class="Totals">
+        <strong>Total: DT<span id="total">0</span></strong>
+    
+    
+    
+      <!-- Nutritional Totals -->
+      <div>
+        <strong>Total Protein: <span id="totalProtein">0</span>g</strong>
+      </div>
+      <div>
+        <strong>Total Carbs: <span id="totalCarb">0</span>g</strong>
+      </div>
+      <div>
+        <strong>Total Fat: <span id="totalFat">0</span>g</strong>
+      </div>
+      <div>
+        <strong>Total Calories: <span id="totalCalories">0</span></strong>
+      </div>
+    
+      <!-- Delivery Charge -->
+    <div>
+      <span>Delivery Charge: </span><span id="deliveryCharge">4.00</span> DT
+    </div>
+      </div>
+    </div>
+
+  <script src="/card.js"></script> <!-- سكربت جافاسكريبت -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
